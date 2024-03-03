@@ -21,9 +21,7 @@ public class FamilyTrip {
         additionalCostPercentage = Integer.parseInt(scanner.nextLine());
 
         /* Price per night reduce 5% if nights > 7 */
-        if (nights > 7) {
-            pricePerNight -= (pricePerNight / 100) * 5;
-        }
+        if (nights > 7) pricePerNight -= (pricePerNight / 100) * 5;
 
         /* Calculate */
         double totalCost = nights * pricePerNight;
